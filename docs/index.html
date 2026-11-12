@@ -3,13 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
+  <meta name="color-scheme" content="light">
   <title>Garis Bantu Olimpiade Matematika</title>
   <meta name="description" content="Buku persiapan olimpiade matematika berbahasa Indonesia karya Ahmad Faqih Al Ghiffary. Unduh gratis dalam bentuk PDF.">
+  <script>
+    /* Pasang tema tersimpan sebelum halaman tampil, agar tidak berkedip. Default terang. */
+    try { if (localStorage.getItem("tema") === "dark") document.documentElement.setAttribute("data-theme", "dark"); } catch (e) {}
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
   <div class="uji">Edisi uji coba. Semua PDF di situs ini masih dummy, bukan isi buku.</div>
@@ -22,6 +26,7 @@
         <a class="belum" href="smp/">Buku SMP</a>
         <a href="ralat/">Ralat</a>
         <a href="#tentang">Tentang</a>
+        <button class="tema" type="button" hidden>Dark</button>
       </nav>
     </div>
   </header>
@@ -148,5 +153,6 @@
       </div>
     </div>
   </footer>
+  <script src="tema.js?v=1" defer></script>
 </body>
 </html>
