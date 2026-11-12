@@ -1,0 +1,26 @@
+name: Saran
+description: Masukan umum tentang buku, materi, atau halaman unduhan.
+title: "[Saran] "
+labels: ["saran"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Untuk kesalahan pada isi buku, gunakan formulir **Laporan kesalahan**.
+  - type: dropdown
+    id: jenjang
+    attributes:
+      label: Jenjang
+      options:
+        - SMA
+        - SMP
+        - Umum
+    validations:
+      required: true
+  - type: textarea
+    id: saran
+    attributes:
+      label: Saran
+      description: Tuliskan saranmu.
+    validations:
+      required: true
