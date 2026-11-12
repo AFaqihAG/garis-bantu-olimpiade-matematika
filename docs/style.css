@@ -1,6 +1,7 @@
 /* Garis Bantu Olimpiade Matematika: gaya situs (arah "penerbit", revisi 2)
    Setiap kali file ini diubah, naikkan angka ?v= pada tautan style.css
    di docs/index.html, docs/sma/index.html, docs/smp/index.html, dan docs/ralat/index.html.
+   Tema gelap diatur oleh docs/tema.js (tombol Dark/Light di masthead).
 
    Aturan identitas:
    - Aksen biru konstruksi (--aksen) untuk tautan, tombol, dan garis bantu di diagram.
@@ -27,20 +28,21 @@
   --sampul-fg: #fbf8f2;
   --bantu: #a9cbe8;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #141517;
-    --fg: #e9e7e2;
-    --fg-2: #cbc8c1;
-    --muted: #a6a39c;
-    --line: #36383c;
-    --line-2: #2a2c30;
-    --kertas: #1d1f22;
-    --kertas-tepi: #45474c;
-    --aksen: #8fb4d6;
-    --on-aksen: #0f1419;
-    --koreksi: #f08a80;
-  }
+/* Tema gelap aktif bila <html data-theme="dark">, diatur oleh tombol di masthead (tema.js). Default terang. */
+:root { color-scheme: light; }
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #141517;
+  --fg: #e9e7e2;
+  --fg-2: #cbc8c1;
+  --muted: #a6a39c;
+  --line: #36383c;
+  --line-2: #2a2c30;
+  --kertas: #1d1f22;
+  --kertas-tepi: #45474c;
+  --aksen: #8fb4d6;
+  --on-aksen: #0f1419;
+  --koreksi: #f08a80;
 }
 
 * { box-sizing: border-box; }
@@ -82,9 +84,15 @@ p { margin: 0; }
 .merek { text-decoration: none; padding: 8px 0; }
 .merek i { font-size: 1.35rem; line-height: 1; }
 .merek span { font-size: .85rem; color: var(--muted); }
-.nav-utama { display: flex; flex-wrap: wrap; gap: 0 22px; font-family: var(--sans); font-size: .85rem; }
+.nav-utama { display: flex; flex-wrap: wrap; align-items: center; gap: 0 22px; font-family: var(--sans); font-size: .85rem; }
 .nav-utama a { padding: 10px 0; text-decoration: none; }
 .nav-utama a.belum { color: var(--muted); }
+.tema {
+  min-height: 36px; padding: 0 12px; border: 1px solid var(--line); border-radius: 3px; background: transparent;
+  color: var(--fg); font: 500 .8rem var(--sans); cursor: pointer;
+}
+.tema:hover { border-color: var(--fg); }
+.tema[hidden] { display: none; }
 .nav-utama a[aria-current="page"] {
   color: var(--aksen); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px;
 }
