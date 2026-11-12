@@ -1,4 +1,6 @@
-/* Garis Bantu Olimpiade Matematika: gaya situs (alternatif B, "Cerah") */
+/* Garis Bantu Olimpiade Matematika: gaya situs (alternatif B, "Cerah")
+   Setiap kali file ini diubah, naikkan angka ?v= pada tautan style.css
+   di docs/index.html, docs/sma/index.html, dan docs/smp/index.html. */
 
 :root {
   --font: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
