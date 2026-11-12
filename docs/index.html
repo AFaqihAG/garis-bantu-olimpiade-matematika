@@ -5,37 +5,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <title>Garis Bantu Olimpiade Matematika</title>
-  <meta name="description" content="Unduh buku Garis Bantu Olimpiade Matematika karya Ahmad Faqih Al Ghiffary, gratis dalam bentuk PDF.">
+  <meta name="description" content="Buku persiapan olimpiade matematika berbahasa Indonesia karya Ahmad Faqih Al Ghiffary. Unduh gratis dalam bentuk PDF.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Garis Bantu Olimpiade Matematika</h1>
-    <p>Ahmad Faqih Al Ghiffary</p>
+  <div class="uji"><strong>Uji coba.</strong> Semua PDF di situs ini masih dummy, bukan isi buku.</div>
+
+  <header class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-teks">
+        <p class="eyebrow">Buku olimpiade matematika, gratis</p>
+        <h1>Garis Bantu <span>Olimpiade Matematika</span></h1>
+        <p class="penulis">Ahmad Faqih Al Ghiffary</p>
+        <p class="lead">Kadang satu garis bantu sudah cukup untuk membuka jalan penyelesaian. Buku ini menemanimu belajar olimpiade matematika selangkah demi selangkah, dari fondasi sampai teknik lanjut.</p>
+        <div class="aksi">
+          <a class="tombol utama" href="sma/">Unduh jilid SMA</a>
+          <a class="tombol kedua" href="#lapor">Laporkan kesalahan</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <svg class="art" viewBox="0 0 320 280" role="img" aria-label="Segitiga dengan garis bantu">
+          <circle class="bantu" cx="160" cy="168" r="62"/>
+          <path class="garis" d="M160 30 L40 240 L280 240 Z"/>
+          <path class="bantu" d="M160 30 L160 240"/>
+          <path class="bantu" d="M40 240 L218 135"/>
+          <path class="siku" d="M160 228 h12 v12"/>
+          <g class="titik"><circle cx="160" cy="30" r="4"/><circle cx="40" cy="240" r="4"/><circle cx="280" cy="240" r="4"/><circle cx="160" cy="240" r="3.5"/></g>
+          <g class="label"><text x="152" y="20">A</text><text x="20" y="258">B</text><text x="286" y="258">C</text><text x="154" y="266">H</text></g>
+        </svg>
+      </div>
+    </div>
   </header>
 
   <main>
-    <p class="uji"><strong>Uji coba.</strong> Halaman ini masih diuji. Semua PDF di sini adalah dummy dan bukan isi buku.</p>
+    <section class="wrap" id="jenjang">
+      <h2>Pilih jenjang</h2>
+      <div class="jenjang">
+        <a class="pil" href="sma/">
+          <span class="pil-nama">SMA</span>
+          <span class="pil-ket">Jilid 0 sampai 3 dan Cheatsheet Teorema</span>
+          <span class="badge ok">Tersedia</span>
+        </a>
+        <a class="pil redup" href="smp/">
+          <span class="pil-nama">SMP</span>
+          <span class="pil-ket">Sedang disiapkan</span>
+          <span class="badge">Menyusul</span>
+        </a>
+      </div>
+    </section>
 
-    <p>Buku persiapan olimpiade matematika berbahasa Indonesia. Materinya disusun bertahap, dari fondasi sampai teknik lanjut, lengkap dengan contoh dan soal. PDF dibagikan gratis.</p>
+    <section class="wrap" id="lapor">
+      <div class="lapor">
+        <div>
+          <h2>Menemukan kesalahan?</h2>
+          <p>Salah ketik, salah hitung, atau soal yang keliru, sekecil apa pun, bantu laporkan. Cukup isi formulir singkat, tanpa perlu daftar akun. Saran juga boleh dikirim lewat formulir yang sama.</p>
+        </div>
+        <div class="lapor-aksi">
+          <a class="tombol utama" href="https://forms.gle/X9PihbFZai924J546">Isi formulir laporan</a>
+          <p class="kecil">Terbiasa dengan GitHub? <a href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/issues/new/choose">Lapor lewat GitHub Issues</a>.</p>
+        </div>
+      </div>
+    </section>
 
-    <h2>Pilih jenjang</h2>
-    <div class="pilihan">
-      <a class="kartu" href="sma/">
-        <strong>SMA</strong>
-        <span>Jilid 0 sampai 3 dan Cheatsheet Teorema</span>
-      </a>
-      <a class="kartu" href="smp/">
-        <strong>SMP</strong>
-        <span>Menyusul</span>
-      </a>
-    </div>
+    <section class="wrap" id="lisensi">
+      <h2>Boleh dan tidak boleh</h2>
+      <div class="aturan">
+        <div class="boleh">
+          <h3>Boleh</h3>
+          <ul>
+            <li>Membaca dan mencetak untuk dirimu sendiri</li>
+            <li>Memakainya untuk mengajar tanpa memungut biaya</li>
+            <li>Membagikannya secara cuma-cuma, dengan menyebut nama penulis dan judul buku</li>
+          </ul>
+        </div>
+        <div class="tidak">
+          <h3>Tidak boleh</h3>
+          <ul>
+            <li>Menjualnya</li>
+            <li>Memakainya sebagai bahan ajar lembaga kursus, bimbingan belajar, atau kegiatan lain yang memungut biaya</li>
+            <li>Menyebarkannya dalam bentuk yang diubah</li>
+          </ul>
+        </div>
+      </div>
+      <p class="kecil">Buku ini dilisensikan di bawah CC BY-NC-ND 4.0. <a href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/blob/main/LICENSE">Baca teks lisensi lengkap</a>.</p>
+    </section>
   </main>
 
   <footer>
-    <p>Buku ini dilisensikan di bawah <strong>CC BY-NC-ND 4.0</strong>. Kamu boleh membaca, mencetak untuk dirimu sendiri, memakainya untuk mengajar tanpa memungut biaya, dan membagikannya secara cuma-cuma, dengan menyebut nama penulis dan judul buku. Buku ini tidak boleh dijual, dipakai sebagai bahan ajar lembaga kursus, bimbingan belajar, atau kegiatan lain yang memungut biaya, dan tidak boleh disebarkan dalam bentuk yang diubah. <a href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/blob/main/LICENSE">Teks lisensi</a>.</p>
-    <p>Menemukan kesalahan? <a href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/issues/new?template=laporan-kesalahan.yml">Laporkan di sini</a>.</p>
-    <p>Buku pribadi, tidak berafiliasi dengan penyelenggara kompetisi mana pun.</p>
+    <div class="wrap">
+      <p>&copy; 2026 Ahmad Faqih Al Ghiffary. Buku pribadi, tidak berafiliasi dengan penyelenggara kompetisi mana pun.</p>
+    </div>
   </footer>
 </body>
 </html>

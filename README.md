@@ -19,9 +19,9 @@ PDF juga bisa diambil langsung dari [Releases](https://github.com/AFaqihAG/garis
 
 ## Melaporkan kesalahan
 
-Menemukan salah ketik, salah hitung, atau soal yang keliru? Buka [laporan kesalahan](https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/issues/new?template=laporan-kesalahan.yml) dan isi jenjang, jilid, versi PDF, nomor halaman, serta letak kesalahannya. Untuk masukan lain, pakai [formulir saran](https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/issues/new?template=saran.yml).
+Menemukan salah ketik, salah hitung, atau soal yang keliru? Isi **[formulir laporan](https://forms.gle/X9PihbFZai924J546)** (tanpa perlu akun). Sebutkan jenjang, jilid, versi PDF, nomor halaman, dan letak kesalahannya. Saran juga bisa dikirim lewat formulir yang sama.
 
-Panduan singkat ada di [CONTRIBUTING.md](.github/CONTRIBUTING.md).
+Bagi yang terbiasa dengan GitHub, laporan juga bisa dibuka sebagai [Issue](https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/issues/new/choose). Panduan singkat ada di [CONTRIBUTING.md](.github/CONTRIBUTING.md).
 
 ## Lisensi
 

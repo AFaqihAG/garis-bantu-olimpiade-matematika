@@ -1,8 +1,10 @@
 # Panduan kontributor
 
-Repo ini hanya berisi halaman unduhan dan tempat laporan. Naskah buku tidak ada di sini, jadi perbaikan dilakukan lewat Issue, bukan pull request.
+Repo ini hanya berisi halaman unduhan dan tempat laporan. Naskah buku tidak ada di sini, jadi kesalahan dilaporkan lewat formulir atau Issue, bukan pull request.
 
 ## Melapor
+
+Jalur utama untuk semua pembaca adalah [Google Form](https://forms.gle/X9PihbFZai924J546), tanpa perlu akun. Kalau kamu punya akun GitHub, boleh juga lewat Issue:
 
 - **Kesalahan di buku**: [formulir laporan kesalahan](https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/issues/new?template=laporan-kesalahan.yml). Sertakan versi PDF dan nomor halaman.
 - **Saran umum**: [formulir saran](https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/issues/new?template=saran.yml).

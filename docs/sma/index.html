@@ -4,91 +4,111 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <title>SMA: Garis Bantu Olimpiade Matematika</title>
-  <meta name="description" content="Unduh jilid SMA buku Garis Bantu Olimpiade Matematika.">
+  <title>Jilid SMA: Garis Bantu Olimpiade Matematika</title>
+  <meta name="description" content="Unduh jilid SMA buku Garis Bantu Olimpiade Matematika, gratis dalam bentuk PDF.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <header>
-    <nav><a href="../">&larr; Beranda</a></nav>
-    <h1>Jenjang SMA</h1>
+  <div class="uji"><strong>Uji coba.</strong> Semua PDF di halaman ini masih dummy, bukan isi buku.</div>
+
+  <nav class="wrap nav"><a href="../">&larr; Beranda</a></nav>
+
+  <header class="hero ringkas">
+    <div class="wrap hero-in">
+      <div class="hero-teks">
+        <p class="eyebrow">Garis Bantu Olimpiade Matematika</p>
+        <h1>Jilid <span>SMA</span></h1>
+        <p class="lead">Setiap jilid satu file PDF, gratis. Versinya tertulis di nama file. Sebutkan versi itu saat melaporkan kesalahan.</p>
+      </div>
+    </div>
   </header>
 
   <main>
-    <p class="uji"><strong>Uji coba.</strong> Semua PDF di halaman ini adalah dummy dan bukan isi buku.</p>
+    <section class="wrap" id="jilid">
+      <!--
+        ================================================================
+        DATA RILIS SMA: SATU-SATUNYA TEMPAT YANG DIUBAH SAAT RILIS BARU
+        ================================================================
+        Setiap <article> = satu jilid. Untuk rilis baru, ubah di kartu terkait:
+          - teks versi dan tanggal di <p class="meta">   (mis. v0.1 &middot; 1 Jan 2027)
+          - label status <span class="status">           (Dummy / Draf / Final)
+          - href tombol Unduh PDF:
+            https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases/download/<TAG>/<NAMA FILE>
+            TAG       = sma-<versi>                       (mis. sma-v0.1)
+            NAMA FILE = GBOM-SMA-Jilid-<n>-<versi>.pdf atau GBOM-SMA-Cheatsheet-<versi>.pdf
+        Jilid yang belum dirilis: beri class "belum" pada <article>, status "Menyusul",
+        dan ganti tombol dengan <span class="tombol mati kecil">Segera</span>.
+        Kebalikannya untuk jilid yang baru dirilis.
+        ================================================================
+      -->
+      <div class="rak">
+        <article class="jilid c0">
+          <div class="sampul"><span class="no">0</span><span class="judul-kecil">GBOM &middot; SMA</span></div>
+          <div class="info">
+            <h3>Jilid 0 <span class="sub">Fondasi</span></h3>
+            <p class="meta">v0.0-uji &middot; 12 Nov 2026 <span class="status">Dummy</span></p>
+            <a class="tombol utama kecil" href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases/download/sma-v0.0-uji/GBOM-SMA-Jilid-0-v0.0-uji.pdf">Unduh PDF</a>
+          </div>
+        </article>
+        <article class="jilid c1">
+          <div class="sampul"><span class="no">1</span><span class="judul-kecil">GBOM &middot; SMA</span></div>
+          <div class="info">
+            <h3>Jilid 1</h3>
+            <p class="meta">v0.0-uji &middot; 12 Nov 2026 <span class="status">Dummy</span></p>
+            <a class="tombol utama kecil" href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases/download/sma-v0.0-uji/GBOM-SMA-Jilid-1-v0.0-uji.pdf">Unduh PDF</a>
+          </div>
+        </article>
+        <article class="jilid c2 belum">
+          <div class="sampul"><span class="no">2</span><span class="judul-kecil">GBOM &middot; SMA</span></div>
+          <div class="info">
+            <h3>Jilid 2</h3>
+            <p class="meta"><span class="status">Menyusul</span></p>
+            <span class="tombol mati kecil">Segera</span>
+          </div>
+        </article>
+        <article class="jilid c3 belum">
+          <div class="sampul"><span class="no">3</span><span class="judul-kecil">GBOM &middot; SMA</span></div>
+          <div class="info">
+            <h3>Jilid 3</h3>
+            <p class="meta"><span class="status">Menyusul</span></p>
+            <span class="tombol mati kecil">Segera</span>
+          </div>
+        </article>
+        <article class="jilid c4">
+          <div class="sampul"><span class="no">&Sigma;</span><span class="judul-kecil">GBOM &middot; SMA</span></div>
+          <div class="info">
+            <h3>Cheatsheet <span class="sub">Teorema</span></h3>
+            <p class="meta">v0.0-uji &middot; 12 Nov 2026 <span class="status">Dummy</span></p>
+            <a class="tombol utama kecil" href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases/download/sma-v0.0-uji/GBOM-SMA-Cheatsheet-v0.0-uji.pdf">Unduh PDF</a>
+          </div>
+        </article>
+      </div>
+      <!-- ======================= AKHIR DATA RILIS SMA ======================= -->
+      <p class="kecil">Versi lama tersimpan di <a href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases">arsip rilis</a>.</p>
+    </section>
 
-    <p>Setiap jilid berupa satu PDF. Versi tertulis di nama file, sebutkan versi itu saat melaporkan kesalahan.</p>
-
-    <h2>Daftar jilid</h2>
-
-    <!--
-      ================================================================
-      DATA RILIS SMA: SATU-SATUNYA TEMPAT YANG DIUBAH SAAT RILIS BARU
-      ================================================================
-      Setiap baris = satu jilid. Untuk rilis baru, ubah di baris terkait:
-        - kolom Versi           (mis. v0.1)
-        - kolom Tanggal         (tanggal rilis)
-        - kolom Status          (Draf / Final)
-        - href tombol Unduh:
-          https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases/download/<TAG>/<NAMA FILE>
-          TAG       = sma-<versi>                 (mis. sma-v0.1)
-          NAMA FILE = GBOM-SMA-Jilid-<n>-<versi>.pdf atau GBOM-SMA-Cheatsheet-<versi>.pdf
-      Jilid yang belum dirilis: tulis "Menyusul" dan hapus tombolnya.
-      ================================================================
-    -->
-    <div class="tabel-wrap">
-      <table class="rilis">
-        <thead>
-          <tr><th>Jilid</th><th>Versi</th><th>Tanggal</th><th>Status</th><th></th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="judul">Jilid 0 (Fondasi)</td>
-            <td data-label="Versi">v0.0-uji</td>
-            <td data-label="Tanggal">12 November 2026</td>
-            <td data-label="Status"><span class="status">Dummy</span></td>
-            <td class="unduh"><a class="tombol" href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases/download/sma-v0.0-uji/GBOM-SMA-Jilid-0-v0.0-uji.pdf">Unduh PDF</a></td>
-          </tr>
-          <tr>
-            <td class="judul">Jilid 1</td>
-            <td data-label="Versi">v0.0-uji</td>
-            <td data-label="Tanggal">12 November 2026</td>
-            <td data-label="Status"><span class="status">Dummy</span></td>
-            <td class="unduh"><a class="tombol" href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases/download/sma-v0.0-uji/GBOM-SMA-Jilid-1-v0.0-uji.pdf">Unduh PDF</a></td>
-          </tr>
-          <tr>
-            <td class="judul">Jilid 2</td>
-            <td data-label="Versi">&ndash;</td>
-            <td data-label="Tanggal">&ndash;</td>
-            <td data-label="Status"><span class="status">Menyusul</span></td>
-            <td class="unduh"></td>
-          </tr>
-          <tr>
-            <td class="judul">Jilid 3</td>
-            <td data-label="Versi">&ndash;</td>
-            <td data-label="Tanggal">&ndash;</td>
-            <td data-label="Status"><span class="status">Menyusul</span></td>
-            <td class="unduh"></td>
-          </tr>
-          <tr>
-            <td class="judul">Cheatsheet Teorema</td>
-            <td data-label="Versi">v0.0-uji</td>
-            <td data-label="Tanggal">12 November 2026</td>
-            <td data-label="Status"><span class="status">Dummy</span></td>
-            <td class="unduh"><a class="tombol" href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases/download/sma-v0.0-uji/GBOM-SMA-Cheatsheet-v0.0-uji.pdf">Unduh PDF</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <!-- ======================= AKHIR DATA RILIS SMA ======================= -->
-
-    <p>Semua versi lama tersedia di <a href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases">halaman Releases</a> (tag berawalan <code>sma-</code>).</p>
+    <section class="wrap" id="lapor">
+      <div class="lapor">
+        <div>
+          <h2>Menemukan kesalahan?</h2>
+          <p>Salah ketik, salah hitung, atau soal yang keliru, sekecil apa pun, bantu laporkan. Cukup isi formulir singkat, tanpa perlu daftar akun.</p>
+        </div>
+        <div class="lapor-aksi">
+          <a class="tombol utama" href="https://forms.gle/X9PihbFZai924J546">Isi formulir laporan</a>
+          <p class="kecil">Terbiasa dengan GitHub? <a href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/issues/new?template=laporan-kesalahan.yml">Lapor lewat GitHub Issues</a>.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>Buku ini dilisensikan di bawah <strong>CC BY-NC-ND 4.0</strong>. Kamu boleh membaca, mencetak untuk dirimu sendiri, memakainya untuk mengajar tanpa memungut biaya, dan membagikannya secara cuma-cuma, dengan menyebut nama penulis dan judul buku. Buku ini tidak boleh dijual, dipakai sebagai bahan ajar lembaga kursus, bimbingan belajar, atau kegiatan lain yang memungut biaya, dan tidak boleh disebarkan dalam bentuk yang diubah. <a href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/blob/main/LICENSE">Teks lisensi</a>.</p>
-    <p>Menemukan kesalahan? <a href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/issues/new?template=laporan-kesalahan.yml">Laporkan di sini</a>.</p>
-    <p>Buku pribadi, tidak berafiliasi dengan penyelenggara kompetisi mana pun.</p>
+    <div class="wrap">
+      <p>Buku ini dilisensikan di bawah CC BY-NC-ND 4.0: boleh dibaca, dicetak untuk diri sendiri, dipakai mengajar tanpa memungut biaya, dan dibagikan cuma-cuma dengan menyebut nama penulis dan judul buku; tidak boleh dijual, dipakai di kursus, bimbingan belajar, atau kegiatan berbayar lain, dan tidak boleh disebarkan dalam bentuk yang diubah. <a href="../#lisensi">Selengkapnya</a>.</p>
+      <p>&copy; 2026 Ahmad Faqih Al Ghiffary. Buku pribadi, tidak berafiliasi dengan penyelenggara kompetisi mana pun.</p>
+    </div>
   </footer>
 </body>
 </html>
