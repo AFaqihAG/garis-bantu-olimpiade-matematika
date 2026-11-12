@@ -1,0 +1,68 @@
+name: Laporan kesalahan
+description: Laporkan salah ketik, salah hitung, soal keliru, atau kesalahan lain di PDF buku.
+title: "[Kesalahan] "
+labels: ["kesalahan"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Terima kasih sudah membantu memperbaiki buku ini. Satu laporan untuk satu kesalahan akan lebih mudah ditindaklanjuti.
+        Versi PDF tertulis di nama file (misalnya `GBOM-SMA-Jilid-1-v0.1.pdf` berarti versi `v0.1`).
+  - type: dropdown
+    id: jenjang
+    attributes:
+      label: Jenjang
+      options:
+        - SMA
+        - SMP
+    validations:
+      required: true
+  - type: dropdown
+    id: jilid
+    attributes:
+      label: Jilid
+      options:
+        - Jilid 0 (Fondasi)
+        - Jilid 1
+        - Jilid 2
+        - Jilid 3
+        - Cheatsheet Teorema
+    validations:
+      required: true
+  - type: input
+    id: versi
+    attributes:
+      label: Versi PDF
+      placeholder: "v0.1"
+    validations:
+      required: true
+  - type: input
+    id: halaman
+    attributes:
+      label: Nomor halaman
+      description: Nomor halaman yang tercetak di PDF.
+      placeholder: "42"
+    validations:
+      required: true
+  - type: input
+    id: letak
+    attributes:
+      label: Letak
+      description: Bab, contoh, atau nomor soal.
+      placeholder: "Bab 3, Contoh 3.4"
+    validations:
+      required: true
+  - type: textarea
+    id: kesalahan
+    attributes:
+      label: Isi kesalahan
+      description: Apa yang salah? Kutip bagian yang keliru bila bisa. LaTeX boleh dipakai, misalnya $x^2$.
+    validations:
+      required: true
+  - type: textarea
+    id: usulan
+    attributes:
+      label: Usulan perbaikan (opsional)
+      description: Seharusnya bagaimana?
+    validations:
+      required: false
