@@ -67,6 +67,6 @@ Alur rilis setelah itu:
 ## 7. Sebelum label "uji coba" dicabut
 
 - [ ] Semua placeholder `[...]` sudah terisi dan pelapor placeholder bersih.
-- [ ] Rilis PDF asli sudah tersedia di GitHub Releases.
-- [ ] **(Claude)** Hapus pita "Edisi uji coba" di semua halaman dan kata "dummy" di info unduhan.
-- [ ] **(Claude)** Hapus catatan uji coba di `README.md` dan `sma/README.md`.
+- [x] Rilis PDF asli sudah tersedia di GitHub Releases (`sma-v0.1`).
+- [x] **(Claude)** Hapus pita "Edisi uji coba" di semua halaman dan kata "dummy" di info unduhan.
+- [x] **(Claude)** Hapus catatan uji coba di `README.md` dan `sma/README.md`.

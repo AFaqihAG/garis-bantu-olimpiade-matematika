@@ -1,11 +1,9 @@
 # Garis Bantu Olimpiade Matematika: SMA
 
-> **Uji coba.** PDF yang tersedia saat ini adalah dummy.
-
 | Jilid | Isi | Status |
 |---|---|---|
-| Jilid 0 | Fondasi | Draf (rilis pertama: v0.1) |
-| Jilid 1 | Dasar | Draf (rilis pertama: v0.1) |
+| Jilid 0 | Fondasi | Tersedia (v0.1) |
+| Jilid 1 | Dasar | Tersedia (v0.1) |
 | Jilid 2 | | Belum tersedia |
 | Jilid 3 | | Belum tersedia |
 | Cheatsheet Teorema | Ringkasan teorema | Belum tersedia |

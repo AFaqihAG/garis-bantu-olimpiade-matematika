@@ -1,14 +1,12 @@
 # Garis Bantu Olimpiade Matematika
 
-> **Uji coba.** Semua PDF yang tersedia saat ini adalah dummy dan bukan isi buku.
-
 *Garis Bantu Olimpiade Matematika* adalah buku persiapan olimpiade matematika berbahasa Indonesia karya Ahmad Faqih Al Ghiffary. Buku ini ditujukan untuk siswa yang belajar mandiri, dan dapat dipakai guru sebagai bahan ajar. Konsep, teknik, dan contoh soal dibahas bertahap, dari fondasi sampai materi lanjut, dalam bentuk PDF.
 
 ## Jenjang
 
 | Jenjang | Status | Isi |
 |---|---|---|
-| [SMA](sma/README.md) | Tersedia (uji coba) | Jilid 0 (Fondasi), Jilid 1 (Dasar), Jilid 2, Jilid 3, Cheatsheet Teorema |
+| [SMA](sma/README.md) | Tersedia (v0.1) | Jilid 0 (Fondasi), Jilid 1 (Dasar), Jilid 2, Jilid 3, Cheatsheet Teorema |
 | [SMP](smp/README.md) | Belum tersedia | |
 
 ## Unduh

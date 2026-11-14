@@ -55,9 +55,6 @@ img { max-width: 100%; height: auto; }
 .wrap { max-width: 60rem; margin: 0 auto; padding: 0 20px; }
 .kecil { font: .8rem/1.5 var(--ui); color: var(--muted); }
 
-/* Penanda uji coba */
-.uji { border-bottom: 1px solid var(--line); font: .75rem var(--ui); color: var(--muted); text-align: center; padding: 8px 16px; }
-
 /* Header */
 .atas { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; padding: 20px 0 0; }
 .merek { font-weight: 700; font-size: 1.05rem; color: var(--fg); text-decoration: none; padding: 6px 0; }
