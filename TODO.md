@@ -32,7 +32,7 @@ Untuk setiap jilid (Jilid 0 sampai 3 dan Cheatsheet Teorema):
 - [ ] **(Penulis)** Bidang materi dominan, untuk menentukan figur sampul.
 - [ ] **(Penulis)** Satu atau dua halaman contoh dari PDF (PNG, lebar sekitar 1000 px): satu halaman soal dan satu halaman pembahasan.
 - [ ] **(Penulis)** Satu kalimat spesifik untuk beranda: cakupan topik, asal soal, jumlah contoh.
-- [x] **(Claude)** Jilid 0 dan 1: judul, ringkasan, daftar bab, sampul asli, dan contoh halaman diambil dari PDF draf v0.1 (`bahan/`).
+- [x] **(Claude)** Jilid 0 dan 1: judul, ringkasan, daftar bab, sampul asli, dan contoh halaman diambil dari PDF rilis `sma-v0.1`.
 - [ ] **(Penulis)** Periksa ringkasan Jilid 0 dan 1 di `docs/sma/index.html`.
 - [ ] **(Claude)** Jilid 2, 3, dan Cheatsheet: isi begitu PDF-nya ada (sampul `docs/img/sampul-sma-<n>.jpg`, contoh halaman `docs/img/contoh-sma-<n>-hlm-<h>.png`).
 
