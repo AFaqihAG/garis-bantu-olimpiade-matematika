@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <title>Buku SMA: Garis Bantu Olimpiade Matematika</title>
-  <meta name="description" content="Daftar bab, contoh halaman, dan unduhan PDF jilid SMA Garis Bantu Olimpiade Matematika.">
+  <meta name="description" content="Daftar bab, pratinjau isi, dan unduhan PDF jilid SMA Garis Bantu Olimpiade Matematika.">
   <link rel="icon" href="../favicon.ico" sizes="48x48">
   <link rel="icon" href="../img/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
@@ -13,7 +13,7 @@
   <meta property="og:locale" content="id_ID">
   <meta property="og:site_name" content="Garis Bantu Olimpiade Matematika">
   <meta property="og:title" content="Buku SMA: Garis Bantu Olimpiade Matematika">
-  <meta property="og:description" content="Daftar bab, contoh halaman, dan unduhan PDF jilid SMA Garis Bantu Olimpiade Matematika.">
+  <meta property="og:description" content="Daftar bab, pratinjau isi, dan unduhan PDF jilid SMA Garis Bantu Olimpiade Matematika.">
   <meta property="og:url" content="https://afaqihag.github.io/garis-bantu-olimpiade-matematika/sma/">
   <meta property="og:image" content="https://afaqihag.github.io/garis-bantu-olimpiade-matematika/img/og.png">
   <meta property="og:image:width" content="1200">
@@ -25,7 +25,7 @@
     try { if (localStorage.getItem("tema") === "dark") document.documentElement.setAttribute("data-theme", "dark"); } catch (e) {}
   </script>
   <link rel="preload" href="../fonts/texgyrepagella-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../style.css?v=7">
+  <link rel="stylesheet" href="../style.css?v=8">
 </head>
 <body>
 
@@ -58,6 +58,8 @@
           https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases/download/<TAG>/<NAMA FILE>
           TAG       = sma-<versi>                       (mis. sma-v0.1)
           NAMA FILE = GBOM-SMA-Jilid-<n>-<versi>.pdf atau GBOM-SMA-Cheatsheet-<versi>.pdf
+      Tombol "Lihat isi": pratinjau sebagian halaman, gambar di docs/img/pratinjau/sma-<n>/01.webp, 02.webp, ...
+        data-jumlah = banyak gambar, data-total = jumlah halaman PDF, data-unduh = tautan PDF yang sama.
       Jilid yang belum dirilis: pakai class "entri belum", sampul <div class="sampul kosong">,
       dan tanpa tombol unduh.
       Tautan unduh yang sama juga ada di rak buku pada docs/index.html.
@@ -65,12 +67,12 @@
     -->
 
     <article class="entri" id="jilid-0">
-      <img class="sampul" src="../img/sampul-sma-0.jpg" width="480" height="679" alt="Sampul Jilid 0: Fondasi">
+      <a class="perbesar" href="../img/sampul-sma-0-besar.jpg" aria-label="Perbesar sampul Jilid 0"><img class="sampul" src="../img/sampul-sma-0.jpg" width="480" height="679" alt="Sampul Jilid 0: Fondasi"></a>
       <div>
         <h2>Jilid 0 · Fondasi</h2>
         <p class="meta">v0.1 · 81 halaman · 0,7 MB</p>
         <p class="ringkas">Bekal sebelum memasuki dunia olimpiade matematika. Dimulai dengan rangkuman materi SMP yang akan terus dipakai di jilid-jilid berikutnya.</p>
-        <p class="aksi"><a class="tombol" href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases/download/sma-v0.1/GBOM-SMA-Jilid-0-v0.1.pdf">Unduh PDF</a></p>
+        <p class="aksi"><a class="tombol" href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases/download/sma-v0.1/GBOM-SMA-Jilid-0-v0.1.pdf">Unduh PDF</a> <a class="tombol kedua lihat-isi" href="../img/pratinjau/sma-0/01.webp" data-galeri="../img/pratinjau/sma-0/" data-jumlah="16" data-judul="Jilid 0" data-unduh="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases/download/sma-v0.1/GBOM-SMA-Jilid-0-v0.1.pdf" data-total="81">Lihat isi</a></p>
         <details>
           <summary>Daftar bab</summary>
           <ol>
@@ -82,20 +84,16 @@
             <li>Pengantar Menulis Solusi</li>
           </ol>
         </details>
-        <details>
-          <summary>Contoh halaman</summary>
-          <a href="../img/contoh-sma-0-hlm-10.png"><img class="contoh" src="../img/contoh-sma-0-hlm-10.png" width="1000" height="1415" loading="lazy" alt="Halaman 10 Jilid 0: Bedah Soal OSN-K SMP 2014, dengan analisis lalu solusi"></a>
-        </details>
       </div>
     </article>
 
     <article class="entri" id="jilid-1">
-      <img class="sampul" src="../img/sampul-sma-1.jpg" width="480" height="679" alt="Sampul Jilid 1: Dasar">
+      <a class="perbesar" href="../img/sampul-sma-1-besar.jpg" aria-label="Perbesar sampul Jilid 1"><img class="sampul" src="../img/sampul-sma-1.jpg" width="480" height="679" alt="Sampul Jilid 1: Dasar"></a>
       <div>
         <h2>Jilid 1 · Dasar</h2>
         <p class="meta">v0.1 · 398 halaman · 2,2 MB</p>
         <p class="ringkas">Aljabar, kombinatorika, teori bilangan, dan geometri dasar, ditutup dengan bab lintas bidang dan soal campuran.</p>
-        <p class="aksi"><a class="tombol" href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases/download/sma-v0.1/GBOM-SMA-Jilid-1-v0.1.pdf">Unduh PDF</a></p>
+        <p class="aksi"><a class="tombol" href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases/download/sma-v0.1/GBOM-SMA-Jilid-1-v0.1.pdf">Unduh PDF</a> <a class="tombol kedua lihat-isi" href="../img/pratinjau/sma-1/01.webp" data-galeri="../img/pratinjau/sma-1/" data-jumlah="18" data-judul="Jilid 1" data-unduh="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases/download/sma-v0.1/GBOM-SMA-Jilid-1-v0.1.pdf" data-total="398">Lihat isi</a></p>
         <details>
           <summary>Daftar bab</summary>
           <ol>
@@ -116,10 +114,6 @@
             <li>Lintas Bidang</li>
             <li>Soal Campuran</li>
           </ol>
-        </details>
-        <details>
-          <summary>Contoh halaman</summary>
-          <a href="../img/contoh-sma-1-hlm-22.png"><img class="contoh" src="../img/contoh-sma-1-hlm-22.png" width="1000" height="1415" loading="lazy" alt="Halaman 22 Jilid 1: Bedah Soal OSN-K 2026 dan OSN-K 2015, dengan analisis lalu solusi"></a>
         </details>
       </div>
     </article>
@@ -159,5 +153,6 @@
     </div></div>
   </footer>
   <script src="../tema.js?v=1" defer></script>
+  <script src="../pratinjau.js?v=1" defer></script>
 </body>
 </html>

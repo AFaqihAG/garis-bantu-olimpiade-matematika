@@ -110,13 +110,64 @@ img { max-width: 100%; height: auto; }
 .entri h2 { font-size: 1.4rem; }
 .entri .meta { font: .8rem var(--ui); color: var(--muted); margin: 4px 0 12px; }
 .entri .ringkas { max-width: 36em; }
-.entri .aksi { margin-top: 16px; }
+.entri .aksi { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px; }
 .entri.belum h2 { color: var(--muted); }
 details { margin-top: 14px; font: .88rem var(--ui); }
 summary { cursor: pointer; padding: 4px 0; color: var(--aksen); }
 details ol { font: .95rem/1.55 var(--teks); margin: 8px 0 0; padding-left: 1.6em; columns: 2; column-gap: 32px; }
 details li { break-inside: avoid; }
-.contoh { display: block; width: min(460px, 100%); margin-top: 10px; border: 1px solid var(--line); }
+
+/* Tombol kedua (garis tepi), mis. "Lihat isi" di samping "Unduh PDF" */
+.tombol.kedua { background: transparent; color: var(--aksen); box-shadow: inset 0 0 0 1px var(--aksen); }
+.tombol.kedua:hover { filter: none; background: color-mix(in srgb, var(--aksen) 8%, transparent); }
+
+/* Pratinjau (docs/pratinjau.js): sampul dan isi buku dibuka di atas halaman */
+.perbesar { display: block; align-self: start; cursor: zoom-in; }
+.perbesar:focus-visible { outline: 2px solid var(--aksen); outline-offset: 3px; }
+.perbesar .sampul { transition: box-shadow .15s; }
+.perbesar:hover .sampul { box-shadow: 0 4px 14px rgba(0, 0, 0, .18); }
+.pratinjau-buka { overflow: hidden; }
+dialog.pratinjau {
+  width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; padding: 0;
+  border: 0; background: transparent; color: #e9e7e2; overflow: auto; overscroll-behavior: contain;
+  font: .85rem/1.5 var(--ui);
+}
+dialog.pratinjau[open] { display: flex; flex-direction: column; }
+dialog.pratinjau::backdrop { background: rgba(12, 13, 15, .88); backdrop-filter: blur(4px); }
+.pratinjau .bilah {
+  position: sticky; top: 0; z-index: 1; display: flex; align-items: center; gap: 10px;
+  padding: 10px 12px; background: rgba(12, 13, 15, .75); backdrop-filter: blur(6px);
+}
+.pratinjau .posisi { flex: 1; min-width: 0; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pratinjau .bilah a, .pratinjau button {
+  display: inline-flex; align-items: center; min-height: 38px; padding: 0 14px;
+  border: 1px solid rgba(255, 255, 255, .45); border-radius: 3px; background: rgba(12, 13, 15, .6);
+  color: #fff; font: 600 .85rem var(--ui); text-decoration: none; cursor: pointer; white-space: nowrap;
+}
+.pratinjau .bilah a:hover, .pratinjau button:hover:not(:disabled) { border-color: #fff; }
+.pratinjau button:disabled { opacity: .35; cursor: default; }
+.pratinjau [hidden] { display: none !important; }
+.pratinjau figure {
+  flex: 1 0 auto; margin: 0; padding: 12px 16px 24px; box-sizing: border-box;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;
+}
+.pratinjau img {
+  display: block; max-width: min(100%, 900px); max-height: calc(100dvh - 120px);
+  width: auto; height: auto; background: #fff; box-shadow: 0 10px 40px rgba(0, 0, 0, .5);
+}
+.pratinjau.panjang figure { justify-content: flex-start; }
+.pratinjau.panjang img { width: min(100%, 900px); max-height: none; aspect-ratio: 1000 / 1415; }
+.pratinjau figcaption { max-width: 40em; text-align: center; }
+.pratinjau figcaption:empty { display: none; }
+.pratinjau .akhir {
+  flex: 1 0 auto; max-width: 28em; margin: 0 auto; padding: 18vh 16px 24px; text-align: center; font: 1.05rem/1.6 var(--teks);
+}
+.pratinjau .akhir .tombol { margin-top: 18px; }
+.pratinjau .navigasi {
+  position: sticky; bottom: 0; margin-top: auto; display: flex; justify-content: center; gap: 12px;
+  padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); background: rgba(12, 13, 15, .75); backdrop-filter: blur(6px);
+}
+
 .penutup { margin-top: 8px; padding-top: 24px; border-top: 1px solid var(--line); max-width: 40em; }
 
 /* Ralat */
