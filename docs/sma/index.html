@@ -3,209 +3,146 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
+  <meta name="color-scheme" content="light dark">
   <title>Buku SMA: Garis Bantu Olimpiade Matematika</title>
-  <meta name="description" content="Unduh jilid SMA buku Garis Bantu Olimpiade Matematika, gratis dalam bentuk PDF.">
+  <meta name="description" content="Daftar bab, contoh halaman, dan unduhan PDF jilid SMA Garis Bantu Olimpiade Matematika.">
   <script>
     /* Pasang tema tersimpan sebelum halaman tampil, agar tidak berkedip. Default terang. */
     try { if (localStorage.getItem("tema") === "dark") document.documentElement.setAttribute("data-theme", "dark"); } catch (e) {}
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="../style.css?v=4">
+  <link rel="preload" href="../fonts/texgyrepagella-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../style.css?v=5">
 </head>
 <body>
   <div class="uji">Edisi uji coba. Semua PDF di halaman ini masih dummy, bukan isi buku.</div>
 
-  <header class="masthead wrap">
-    <div class="masthead-in">
-      <a class="merek" href="../"><i>Garis Bantu</i> <span>Olimpiade Matematika</span></a>
-      <nav class="nav-utama" aria-label="Utama">
+  <div class="wrap">
+    <header class="atas">
+      <a class="merek" href="../">Garis Bantu Olimpiade Matematika</a>
+      <nav aria-label="Utama">
         <a href="./" aria-current="page">Buku SMA</a>
-        <a class="belum" href="../smp/">Buku SMP</a>
         <a href="../ralat/">Ralat</a>
-        <a href="../#tentang">Tentang</a>
+        <a href="../#lisensi">Lisensi</a>
         <button class="tema" type="button" hidden>Dark</button>
       </nav>
-    </div>
-  </header>
+    </header>
+  </div>
 
   <main class="wrap">
-    <nav class="jejak" aria-label="Jejak"><a href="../">Beranda</a> / Buku SMA</nav>
-
-    <div class="judul-hal">
+    <div class="intro">
       <h1>Buku SMA</h1>
-      <p>Empat jilid dan satu ringkasan teorema. Mulai dari Jilid 0 jika baru mengenal olimpiade; setiap jilid bisa diunduh terpisah. Versi tertulis di nama berkas; sebutkan versi itu saat melaporkan kesalahan.</p>
+      <p>Empat jilid dan satu ringkasan teorema, dibaca berurutan. Baru mengenal olimpiade? Mulai dari Jilid 0. Versi PDF tertulis di halaman sampul; sebutkan versi itu saat melaporkan kesalahan.</p>
     </div>
-
-    <nav class="lompat" aria-label="Daftar jilid">
-      <span>Langsung ke</span>
-      <a href="#jilid-0">Jilid 0</a>
-      <a href="#jilid-1">Jilid 1</a>
-      <a href="#jilid-2">Jilid 2</a>
-      <a href="#jilid-3">Jilid 3</a>
-      <a href="#cheatsheet">Cheatsheet</a>
-    </nav>
 
     <!--
       ================================================================
       DATA RILIS SMA: TEMPAT YANG DIUBAH SAAT RILIS BARU
       ================================================================
       Setiap <article class="entri"> = satu jilid. Untuk rilis baru, ubah di entri terkait:
-        - teks di <span class="info">   (versi, tanggal, jumlah halaman, ukuran)
+        - teks di <p class="meta">   (versi, jumlah halaman, ukuran)
         - href tombol Unduh PDF:
           https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases/download/<TAG>/<NAMA FILE>
           TAG       = sma-<versi>                       (mis. sma-v0.1)
           NAMA FILE = GBOM-SMA-Jilid-<n>-<versi>.pdf atau GBOM-SMA-Cheatsheet-<versi>.pdf
-      Jilid yang belum dirilis: ganti isi <div class="aksi"> dengan
-        <span class="status">Sedang disiapkan</span>
-      dan hapus blok "Contoh halaman". Kebalikannya untuk jilid yang baru dirilis.
-      Tautan unduh yang sama juga ada di daftar buku pada docs/index.html.
+      Jilid yang belum dirilis: pakai class "entri belum", sampul <div class="sampul kosong">,
+      dan tanpa tombol unduh.
+      Tautan unduh yang sama juga ada di rak buku pada docs/index.html.
       ================================================================
     -->
 
     <article class="entri" id="jilid-0">
-      <div class="entri-sampul">
-        <div class="sampul" aria-hidden="true"><div class="sampul-in">
-          <div class="s-kepala"><span class="s-judul">Garis Bantu</span><span class="s-seri">Olimpiade Matematika</span></div>
-          <svg viewBox="0 0 200 170"><path class="g" d="M100 14 L18 156 L182 156 Z"/><path class="b" d="M100 14 L100 156"/><path class="s" d="M100 146 h10 v10"/><circle class="t" cx="100" cy="14" r="3"/><circle class="t" cx="18" cy="156" r="3"/><circle class="t" cx="182" cy="156" r="3"/><circle class="tb" cx="100" cy="156" r="2.6"/></svg>
-          <div class="s-kaki"><div class="s-garis"></div><div class="s-baris"><span>Jilid 0</span><span>SMA</span></div><span class="s-nama">Fondasi</span><span class="s-penulis">Ahmad Faqih Al Ghiffary</span></div>
-        </div></div>
-      </div>
+      <img class="sampul" src="../img/sampul-sma-0.jpg" width="480" height="679" alt="Sampul Jilid 0: Fondasi">
       <div>
-        <p class="label">Jilid 0 &middot; [tingkat: pemula]</p>
-        <h2>Fondasi</h2>
-        <p class="ringkas">[Dua kalimat: apa yang dibahas dan siapa yang cocok membacanya.]</p>
-      </div>
-      <div class="entri-isi">
-        <div class="dua-kol">
-          <div><h3>Yang dipelajari</h3><ul><li>[Materi 1]</li><li>[Materi 2]</li><li>[Materi 3]</li></ul></div>
-          <div><h3>Daftar isi</h3><ol><li>[Judul bab]</li><li>[Judul bab]</li><li>[Judul bab]</li><li>[Judul bab]</li></ol></div>
-        </div>
-        <div>
-          <h3>Contoh halaman</h3>
-          <div class="pratinjau"><div class="halaman kecil-h">[Pratinjau halaman soal]</div><div class="halaman kecil-h">[Pratinjau halaman pembahasan]</div></div>
-        </div>
-        <div class="aksi">
-          <a class="tombol" href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases/download/sma-v0.0-uji/GBOM-SMA-Jilid-0-v0.0-uji.pdf">Unduh PDF</a>
-          <span class="info">v0.0-uji &middot; 12 Nov 2026 &middot; [n] hlm. &middot; [x] MB &middot; dummy</span>
-        </div>
+        <h2>Jilid 0 · Fondasi</h2>
+        <p class="meta">Draf v0.1 · 81 halaman · 0,7 MB</p>
+        <p class="ringkas">Bekal berpikir dan membuktikan sebelum soal olimpiade. Dimulai dengan rangkuman materi SMP yang dipakai di jilid berikutnya.</p>
+        <p class="aksi"><a class="tombol" href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases/download/sma-v0.0-uji/GBOM-SMA-Jilid-0-v0.0-uji.pdf">Unduh PDF</a></p>
+        <details>
+          <summary>Daftar bab</summary>
+          <ol>
+            <li>Cara Belajar Problem Solving</li>
+            <li>Bahasa Matematika</li>
+            <li>Fungsi Dasar</li>
+            <li>Teknik Pembuktian</li>
+            <li>Pengantar Menulis Solusi</li>
+          </ol>
+        </details>
+        <details>
+          <summary>Contoh halaman</summary>
+          <a href="../img/contoh-sma-0-hlm-10.png"><img class="contoh" src="../img/contoh-sma-0-hlm-10.png" width="1000" height="1415" loading="lazy" alt="Halaman 10 Jilid 0: Bedah Soal OSN-K SMP 2014, dengan analisis lalu solusi"></a>
+        </details>
       </div>
     </article>
 
     <article class="entri" id="jilid-1">
-      <div class="entri-sampul">
-        <div class="sampul" aria-hidden="true"><div class="sampul-in">
-          <div class="s-kepala"><span class="s-judul">Garis Bantu</span><span class="s-seri">Olimpiade Matematika</span></div>
-          <svg viewBox="0 0 200 170"><circle class="g" cx="92" cy="86" r="62"/><path class="g" d="M30 86 L154 86"/><path class="b" d="M92 86 L136 42"/><path class="b" d="M108 4 L190 86"/><circle class="t" cx="92" cy="86" r="3"/><circle class="tb" cx="136" cy="42" r="3"/></svg>
-          <div class="s-kaki"><div class="s-garis"></div><div class="s-baris"><span>Jilid 1</span><span>SMA</span></div><span class="s-nama">[Judul]</span><span class="s-penulis">Ahmad Faqih Al Ghiffary</span></div>
-        </div></div>
-      </div>
+      <img class="sampul" src="../img/sampul-sma-1.jpg" width="480" height="679" alt="Sampul Jilid 1: Dasar">
       <div>
-        <p class="label">Jilid 1 &middot; [tingkat]</p>
-        <h2>[Judul jilid 1]</h2>
-        <p class="ringkas">[Dua kalimat ringkasan.]</p>
-      </div>
-      <div class="entri-isi">
-        <div class="dua-kol">
-          <div><h3>Yang dipelajari</h3><ul><li>[Materi 1]</li><li>[Materi 2]</li><li>[Materi 3]</li></ul></div>
-          <div><h3>Daftar isi</h3><ol><li>[Judul bab]</li><li>[Judul bab]</li><li>[Judul bab]</li><li>[Judul bab]</li></ol></div>
-        </div>
-        <div>
-          <h3>Contoh halaman</h3>
-          <div class="pratinjau"><div class="halaman kecil-h">[Pratinjau halaman soal]</div><div class="halaman kecil-h">[Pratinjau halaman pembahasan]</div></div>
-        </div>
-        <div class="aksi">
-          <a class="tombol" href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases/download/sma-v0.0-uji/GBOM-SMA-Jilid-1-v0.0-uji.pdf">Unduh PDF</a>
-          <span class="info">v0.0-uji &middot; 12 Nov 2026 &middot; [n] hlm. &middot; [x] MB &middot; dummy</span>
-        </div>
+        <h2>Jilid 1 · Dasar</h2>
+        <p class="meta">Draf v0.1 · 398 halaman · 2,2 MB</p>
+        <p class="ringkas">Aljabar, kombinatorika, teori bilangan, dan geometri dalam empat belas bab, ditutup dengan bab lintas bidang dan soal campuran.</p>
+        <p class="aksi"><a class="tombol" href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases/download/sma-v0.0-uji/GBOM-SMA-Jilid-1-v0.0-uji.pdf">Unduh PDF</a></p>
+        <details>
+          <summary>Daftar bab</summary>
+          <ol>
+            <li>Manipulasi Aljabar dan Bentuk Akar</li>
+            <li>Aturan Pencacahan, Permutasi, dan Kombinasi</li>
+            <li>Keterbagian, FPB, dan KPK</li>
+            <li>Sudut dan Kesebangunan</li>
+            <li>Polinomial dan Binomial Newton</li>
+            <li>Luas Bidang dan Panjang Sisi</li>
+            <li>Kongruensi dan Digit</li>
+            <li>Barisan dan Deret</li>
+            <li>Inklusi-Eksklusi dan Peluang</li>
+            <li>Lingkaran dan Segiempat Tali Busur</li>
+            <li>Nilai Mutlak, Floor, dan Logaritma</li>
+            <li>Trigonometri dan Koordinat</li>
+            <li>Rekursi dan Sarang Merpati</li>
+            <li>AM-GM dan Ketaksamaan Dasar</li>
+            <li>Lintas Bidang</li>
+            <li>Soal Campuran</li>
+          </ol>
+        </details>
+        <details>
+          <summary>Contoh halaman</summary>
+          <a href="../img/contoh-sma-1-hlm-22.png"><img class="contoh" src="../img/contoh-sma-1-hlm-22.png" width="1000" height="1415" loading="lazy" alt="Halaman 22 Jilid 1: Bedah Soal OSN-K 2026 dan OSN-K 2015, dengan analisis lalu solusi"></a>
+        </details>
       </div>
     </article>
 
-    <article class="entri" id="jilid-2">
-      <div class="entri-sampul">
-        <div class="sampul" aria-hidden="true"><div class="sampul-in">
-          <div class="s-kepala"><span class="s-judul">Garis Bantu</span><span class="s-seri">Olimpiade Matematika</span></div>
-          <svg viewBox="0 0 200 170"><circle class="b" cx="100" cy="86" r="70"/><path class="g" d="M46 42 L160 50 L150 136 L38 112 Z"/><path class="s" d="M46 42 L150 136 M160 50 L38 112"/><circle class="t" cx="46" cy="42" r="3"/><circle class="t" cx="160" cy="50" r="3"/><circle class="t" cx="150" cy="136" r="3"/><circle class="t" cx="38" cy="112" r="3"/></svg>
-          <div class="s-kaki"><div class="s-garis"></div><div class="s-baris"><span>Jilid 2</span><span>SMA</span></div><span class="s-nama">[Judul]</span><span class="s-penulis">Ahmad Faqih Al Ghiffary</span></div>
-        </div></div>
-      </div>
+    <article class="entri belum" id="jilid-2">
+      <div class="sampul kosong">Sedang ditulis</div>
       <div>
-        <p class="label">Jilid 2 &middot; [tingkat]</p>
-        <h2>[Judul jilid 2]</h2>
-        <p class="ringkas">[Dua kalimat ringkasan.]</p>
-      </div>
-      <div class="entri-isi">
-        <div class="dua-kol">
-          <div><h3>Yang dipelajari</h3><ul><li>[Materi 1]</li><li>[Materi 2]</li><li>[Materi 3]</li></ul></div>
-          <div><h3>Daftar isi</h3><ol><li>[Judul bab]</li><li>[Judul bab]</li><li>[Judul bab]</li><li>[Judul bab]</li></ol></div>
-        </div>
-        <div class="aksi"><span class="status">Sedang disiapkan</span></div>
+        <h2>Jilid 2</h2>
+        <p class="meta">Sedang ditulis</p>
       </div>
     </article>
 
-    <article class="entri" id="jilid-3">
-      <div class="entri-sampul">
-        <div class="sampul" aria-hidden="true"><div class="sampul-in">
-          <div class="s-kepala"><span class="s-judul">Garis Bantu</span><span class="s-seri">Olimpiade Matematika</span></div>
-          <svg viewBox="0 0 200 170"><path class="g" d="M70 14 L14 156 L188 156 Z"/><circle class="b" cx="76" cy="113" r="43"/><path class="b" d="M14 156 L76 113 M188 156 L76 113 M70 14 L76 113"/><circle class="tb" cx="76" cy="113" r="2.6"/></svg>
-          <div class="s-kaki"><div class="s-garis"></div><div class="s-baris"><span>Jilid 3</span><span>SMA</span></div><span class="s-nama">[Judul]</span><span class="s-penulis">Ahmad Faqih Al Ghiffary</span></div>
-        </div></div>
-      </div>
+    <article class="entri belum" id="jilid-3">
+      <div class="sampul kosong">Sedang ditulis</div>
       <div>
-        <p class="label">Jilid 3 &middot; [tingkat]</p>
-        <h2>[Judul jilid 3]</h2>
-        <p class="ringkas">[Dua kalimat ringkasan.]</p>
-      </div>
-      <div class="entri-isi">
-        <div class="dua-kol">
-          <div><h3>Yang dipelajari</h3><ul><li>[Materi 1]</li><li>[Materi 2]</li><li>[Materi 3]</li></ul></div>
-          <div><h3>Daftar isi</h3><ol><li>[Judul bab]</li><li>[Judul bab]</li><li>[Judul bab]</li><li>[Judul bab]</li></ol></div>
-        </div>
-        <div class="aksi"><span class="status">Sedang disiapkan</span></div>
+        <h2>Jilid 3</h2>
+        <p class="meta">Sedang ditulis</p>
       </div>
     </article>
 
     <article class="entri" id="cheatsheet">
-      <div class="entri-sampul">
-        <div class="sampul" aria-hidden="true"><div class="sampul-in">
-          <div class="s-kepala"><span class="s-judul">Garis Bantu</span><span class="s-seri">Olimpiade Matematika</span></div>
-          <svg viewBox="0 0 200 170"><g class="t"><circle cx="30" cy="30" r="2.4"/><circle cx="65" cy="30" r="2.4"/><circle cx="100" cy="30" r="2.4"/><circle cx="135" cy="30" r="2.4"/><circle cx="170" cy="30" r="2.4"/><circle cx="30" cy="65" r="2.4"/><circle cx="65" cy="65" r="2.4"/><circle cx="100" cy="65" r="2.4"/><circle cx="135" cy="65" r="2.4"/><circle cx="170" cy="65" r="2.4"/><circle cx="30" cy="100" r="2.4"/><circle cx="65" cy="100" r="2.4"/><circle cx="100" cy="100" r="2.4"/><circle cx="135" cy="100" r="2.4"/><circle cx="170" cy="100" r="2.4"/><circle cx="30" cy="135" r="2.4"/><circle cx="65" cy="135" r="2.4"/><circle cx="100" cy="135" r="2.4"/><circle cx="135" cy="135" r="2.4"/><circle cx="170" cy="135" r="2.4"/></g><path class="g" d="M30 135 L100 30 L170 100 Z"/><path class="b" d="M30 135 L170 135 L170 100 M100 30 L30 30 L30 135"/></svg>
-          <div class="s-kaki"><div class="s-garis"></div><div class="s-baris"><span>Ringkasan</span><span>SMA</span></div><span class="s-nama">Cheatsheet Teorema</span><span class="s-penulis">Ahmad Faqih Al Ghiffary</span></div>
-        </div></div>
-      </div>
+      <div class="sampul kosong">Cheatsheet Teorema</div>
       <div>
-        <p class="label">Ringkasan &middot; untuk semua jilid</p>
         <h2>Cheatsheet Teorema</h2>
-        <p class="ringkas">[Dua kalimat: teorema apa saja yang dirangkum dan kapan memakainya.]</p>
-      </div>
-      <div class="entri-isi">
-        <div class="dua-kol">
-          <div><h3>Yang dirangkum</h3><ul><li>[Bidang 1]</li><li>[Bidang 2]</li><li>[Bidang 3]</li></ul></div>
-          <div><h3>Daftar isi</h3><ol><li>[Judul bagian]</li><li>[Judul bagian]</li><li>[Judul bagian]</li></ol></div>
-        </div>
-        <div>
-          <h3>Contoh halaman</h3>
-          <div class="pratinjau"><div class="halaman kecil-h">[Pratinjau halaman]</div></div>
-        </div>
-        <div class="aksi">
-          <a class="tombol" href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases/download/sma-v0.0-uji/GBOM-SMA-Cheatsheet-v0.0-uji.pdf">Unduh PDF</a>
-          <span class="info">v0.0-uji &middot; 12 Nov 2026 &middot; [n] hlm. &middot; [x] MB &middot; dummy</span>
-        </div>
+        <p class="meta">Untuk semua jilid</p>
+        <p class="ringkas">Teorema dari semua bab, dikumpulkan per bidang beserta letaknya di buku.</p>
+        <p class="aksi"><a class="tombol" href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases/download/sma-v0.0-uji/GBOM-SMA-Cheatsheet-v0.0-uji.pdf">Unduh PDF</a></p>
       </div>
     </article>
     <!-- ======================= AKHIR DATA RILIS SMA ======================= -->
 
-    <p class="kecil" style="margin-top: 24px;">Versi lama tersimpan di <a href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases">arsip rilis</a>. Koreksi tiap versi ada di <a href="../ralat/">halaman ralat</a>. Menemukan kesalahan baru? <a href="https://forms.gle/X9PihbFZai924J546">Isi formulir laporan</a>.</p>
+    <p class="penutup">Versi lama tersimpan di <a href="https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/releases">arsip rilis</a>. Menemukan kesalahan? Isi <a href="https://forms.gle/X9PihbFZai924J546">formulir laporan</a>; koreksi yang sudah dicek ada di <a href="../ralat/">halaman ralat</a>.</p>
   </main>
 
-  <footer class="wrap">
-    <div class="footer-in">
-      <div>
-        <p>&copy; 2026 Ahmad Faqih Al Ghiffary &middot; Gratis, CC BY-NC-ND 4.0 &middot; <a href="../#tentang">Boleh dan tidak boleh</a></p>
-      </div>
-    </div>
+  <footer>
+    <div class="wrap"><div class="kecil">
+      <p>© 2026 Ahmad Faqih Al Ghiffary · Gratis, CC BY-NC-ND 4.0 · <a href="../#lisensi">Boleh dan tidak boleh</a></p>
+    </div></div>
   </footer>
   <script src="../tema.js?v=1" defer></script>
 </body>
