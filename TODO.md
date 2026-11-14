@@ -11,7 +11,7 @@ Urutan yang disarankan: bagian 1 dan 2 dulu karena tidak menunggu konten, lalu b
 ## 1. Catatan aturan proyek
 
 - [ ] **(Claude)** Buat `CLAUDE.md` di root repository berisi:
-  - aturan desain: aksen biru konstruksi `#315878`, merah hanya untuk ralat, garis putus-putus hanya di diagram, satu warna sampul per jenjang;
+  - aturan desain: teks hitam, aksen biru `#315878` hanya untuk tautan dan tombol, merah hanya untuk ralat, huruf teks TeX Gyre Pagella (sama dengan buku), sampul memakai gambar asli dari PDF;
   - cara rilis PDF dan cara menambah ralat;
   - gaya bahasa situs (bahasa Indonesia lugas, tanpa tanda pisah panjang);
   - alur kerja: branch, pull request, lalu merge ke `main`;
@@ -32,7 +32,9 @@ Untuk setiap jilid (Jilid 0 sampai 3 dan Cheatsheet Teorema):
 - [ ] **(Penulis)** Bidang materi dominan, untuk menentukan figur sampul.
 - [ ] **(Penulis)** Satu atau dua halaman contoh dari PDF (PNG, lebar sekitar 1000 px): satu halaman soal dan satu halaman pembahasan.
 - [ ] **(Penulis)** Satu kalimat spesifik untuk beranda: cakupan topik, asal soal, jumlah contoh.
-- [ ] **(Claude)** Masukkan semua konten di atas ke `docs/index.html` dan `docs/sma/index.html`, ganti placeholder, dan sesuaikan figur sampul per jilid.
+- [x] **(Claude)** Jilid 0 dan 1: judul, ringkasan, daftar bab, sampul asli, dan contoh halaman diambil dari PDF draf v0.1 (`bahan/`).
+- [ ] **(Penulis)** Periksa ringkasan Jilid 0 dan 1 di `docs/sma/index.html`.
+- [ ] **(Claude)** Jilid 2, 3, dan Cheatsheet: isi begitu PDF-nya ada (sampul `docs/img/sampul-sma-<n>.jpg`, contoh halaman `docs/img/contoh-sma-<n>-hlm-<h>.png`).
 
 Cara menyerahkan: kirim semuanya dalam satu pesan atau satu file teks. Tidak perlu rapi.
 
@@ -58,10 +60,9 @@ Alur rilis setelah itu:
 
 ## 6. Penyempurnaan tampilan
 
-- [ ] **(Claude)** Di layar ponsel sempit, pindahkan tombol Dark/Light ke baris judul agar tidak turun ke baris kedua navigasi (opsional).
+- [x] **(Claude)** Redesign tata letak "rak buku": beranda menampilkan sampul asli tiap jilid, detail dan daftar bab di halaman Buku SMA.
 - [ ] **(Claude)** Favicon.
 - [ ] **(Claude)** Gambar pratinjau dan meta Open Graph untuk tautan yang dibagikan di WhatsApp atau media sosial.
-- [ ] **(Penulis)** Tentukan warna sampul untuk jenjang SMP (usulan sementara: `#3d2f4f`).
 
 ## 7. Sebelum label "uji coba" dicabut
 
