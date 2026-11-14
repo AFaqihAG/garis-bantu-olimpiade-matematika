@@ -10,7 +10,7 @@ Urutan yang disarankan: bagian 1 dan 2 dulu karena tidak menunggu konten, lalu b
 
 ## 1. Catatan aturan proyek
 
-- [ ] **(Claude)** Buat `CLAUDE.md` di root repository berisi:
+- [x] **(Claude)** Buat `CLAUDE.md` di root repository berisi:
   - aturan desain: teks hitam, aksen biru `#315878` hanya untuk tautan dan tombol, merah hanya untuk ralat, huruf teks TeX Gyre Pagella (sama dengan buku), sampul memakai gambar asli dari PDF;
   - cara rilis PDF dan cara menambah ralat;
   - gaya bahasa situs (bahasa Indonesia lugas, tanpa tanda pisah panjang);
@@ -21,7 +21,7 @@ Urutan yang disarankan: bagian 1 dan 2 dulu karena tidak menunggu konten, lalu b
 
 - [x] **(Claude)** Pemeriksaan tautan rusak di `docs/` pada setiap pull request, termasuk tautan unduh PDF.
 - [ ] **(Claude)** Pelapor placeholder: daftar semua teks `[...]` yang masih tersisa di halaman.
-- [ ] **(Claude)** Peringatan bila `docs/style.css` atau `docs/tema.js` berubah tetapi angka `?v=` di halaman tidak dinaikkan.
+- [ ] **(Claude)** Peringatan bila `docs/style.css`, `docs/tema.js`, atau `docs/pratinjau.js` berubah tetapi angka `?v=` di halaman tidak dinaikkan.
 
 ## 3. Konten jilid SMA
 
@@ -34,7 +34,7 @@ Untuk setiap jilid (Jilid 0 sampai 3 dan Cheatsheet Teorema):
 - [ ] **(Penulis)** Satu kalimat spesifik untuk beranda: cakupan topik, asal soal, jumlah contoh.
 - [x] **(Claude)** Jilid 0 dan 1: judul, ringkasan, daftar bab, sampul asli, dan contoh halaman diambil dari PDF rilis `sma-v0.1`.
 - [ ] **(Penulis)** Periksa ringkasan Jilid 0 dan 1 di `docs/sma/index.html`.
-- [ ] **(Claude)** Jilid 2, 3, dan Cheatsheet: isi begitu PDF-nya ada (sampul `docs/img/sampul-sma-<n>.jpg`, contoh halaman `docs/img/contoh-sma-<n>-hlm-<h>.png`).
+- [ ] **(Claude)** Jilid 2, 3, dan Cheatsheet: isi begitu PDF-nya ada (sampul `docs/img/sampul-sma-<n>.jpg` dan `sampul-sma-<n>-besar.jpg`, contoh halaman `docs/img/contoh-sma-<n>-hlm-<h>.png`).
 
 Cara menyerahkan: kirim semuanya dalam satu pesan atau satu file teks. Tidak perlu rapi.
 
@@ -63,6 +63,8 @@ Alur rilis setelah itu:
 - [x] **(Claude)** Redesign tata letak "rak buku": beranda menampilkan sampul asli tiap jilid, detail dan daftar bab di halaman Buku SMA.
 - [x] **(Claude)** Favicon.
 - [x] **(Claude)** Gambar pratinjau dan meta Open Graph untuk tautan yang dibagikan di WhatsApp atau media sosial.
+
+- [x] **(Claude)** Sampul dan contoh halaman di halaman Buku SMA bisa diklik untuk dilihat besar di atas halaman.
 
 ## 7. Sebelum label "uji coba" dicabut
 

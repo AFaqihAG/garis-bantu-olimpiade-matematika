@@ -117,6 +117,36 @@ summary { cursor: pointer; padding: 4px 0; color: var(--aksen); }
 details ol { font: .95rem/1.55 var(--teks); margin: 8px 0 0; padding-left: 1.6em; columns: 2; column-gap: 32px; }
 details li { break-inside: avoid; }
 .contoh { display: block; width: min(460px, 100%); margin-top: 10px; border: 1px solid var(--line); }
+
+/* Pratinjau gambar (docs/pratinjau.js): sampul dan contoh halaman dibuka di atas halaman */
+.perbesar { display: block; align-self: start; cursor: zoom-in; }
+.perbesar:focus-visible { outline: 2px solid var(--aksen); outline-offset: 3px; }
+.perbesar .sampul { transition: box-shadow .15s; }
+.perbesar:hover .sampul { box-shadow: 0 4px 14px rgba(0, 0, 0, .18); }
+.pratinjau-buka { overflow: hidden; }
+dialog.pratinjau {
+  width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; padding: 0;
+  border: 0; background: transparent; overflow: auto; overscroll-behavior: contain;
+}
+dialog.pratinjau::backdrop { background: rgba(12, 13, 15, .86); backdrop-filter: blur(4px); }
+.pratinjau figure {
+  min-height: 100%; margin: 0; padding: 56px 16px 24px; box-sizing: border-box;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;
+}
+.pratinjau img {
+  display: block; max-width: min(100%, 900px); max-height: calc(100dvh - 120px);
+  width: auto; height: auto; background: #fff; box-shadow: 0 10px 40px rgba(0, 0, 0, .5);
+}
+.pratinjau.panjang figure { justify-content: flex-start; }
+.pratinjau.panjang img { width: min(100%, 900px); max-height: none; }
+.pratinjau figcaption { max-width: 40em; font: .85rem/1.5 var(--ui); color: #e9e7e2; text-align: center; }
+.pratinjau .tutup {
+  position: fixed; top: 12px; right: 12px; z-index: 1; min-height: 38px; padding: 0 14px;
+  border: 1px solid rgba(255, 255, 255, .45); border-radius: 3px; background: rgba(12, 13, 15, .6);
+  color: #fff; font: 600 .85rem var(--ui); cursor: pointer;
+}
+.pratinjau .tutup:hover { border-color: #fff; }
+
 .penutup { margin-top: 8px; padding-top: 24px; border-top: 1px solid var(--line); max-width: 40em; }
 
 /* Ralat */
