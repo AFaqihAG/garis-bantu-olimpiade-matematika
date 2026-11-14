@@ -19,7 +19,7 @@ Urutan yang disarankan: bagian 1 dan 2 dulu karena tidak menunggu konten, lalu b
 
 ## 2. Pemeriksaan otomatis (GitHub Actions)
 
-- [ ] **(Claude)** Pemeriksaan tautan rusak di `docs/` pada setiap pull request, termasuk tautan unduh PDF.
+- [x] **(Claude)** Pemeriksaan tautan rusak di `docs/` pada setiap pull request, termasuk tautan unduh PDF.
 - [ ] **(Claude)** Pelapor placeholder: daftar semua teks `[...]` yang masih tersisa di halaman.
 - [ ] **(Claude)** Peringatan bila `docs/style.css` atau `docs/tema.js` berubah tetapi angka `?v=` di halaman tidak dinaikkan.
 
@@ -61,8 +61,8 @@ Alur rilis setelah itu:
 ## 6. Penyempurnaan tampilan
 
 - [x] **(Claude)** Redesign tata letak "rak buku": beranda menampilkan sampul asli tiap jilid, detail dan daftar bab di halaman Buku SMA.
-- [ ] **(Claude)** Favicon.
-- [ ] **(Claude)** Gambar pratinjau dan meta Open Graph untuk tautan yang dibagikan di WhatsApp atau media sosial.
+- [x] **(Claude)** Favicon.
+- [x] **(Claude)** Gambar pratinjau dan meta Open Graph untuk tautan yang dibagikan di WhatsApp atau media sosial.
 
 ## 7. Sebelum label "uji coba" dicabut
 

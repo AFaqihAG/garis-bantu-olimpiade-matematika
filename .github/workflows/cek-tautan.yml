@@ -1,0 +1,56 @@
+# Memeriksa semua tautan di situs (docs/): file lokal, penanda #bagian,
+# tautan unduh PDF di GitHub Releases, dan tautan luar.
+# Jalan pada setiap pull request yang mengubah docs/, setiap push ke main,
+# dan sekali seminggu untuk menangkap tautan luar yang mati.
+name: Cek tautan
+
+on:
+  pull_request:
+    paths:
+      - "docs/**"
+      - ".github/workflows/cek-tautan.yml"
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+  schedule:
+    - cron: "17 2 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cek:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # lychee tidak membaca <meta property="og:image">, jadi gambar pratinjau dicek di sini.
+      - name: Cek gambar pratinjau (og:image)
+        run: |
+          base="https://afaqihag.github.io/garis-bantu-olimpiade-matematika/"
+          gagal=0
+          for url in $(grep -rhoP '<meta property="og:image" content="\K[^"]+' docs | sort -u); do
+            berkas="docs/${url#"$base"}"
+            if [ ! -f "$berkas" ]; then
+              echo "::error::og:image $url tidak ditemukan sebagai $berkas"
+              gagal=1
+            fi
+          done
+          exit $gagal
+
+      - name: Cek tautan
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # issues/new membalas 403 untuk pengunjung yang belum login.
+          args: >-
+            --no-progress
+            --include-fragments
+            --index-files index.html
+            --exclude 'github\.com/.*/issues/new'
+            'docs/**/*.html'
+          fail: true
+          jobSummary: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
