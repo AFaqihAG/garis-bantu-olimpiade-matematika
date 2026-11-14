@@ -61,8 +61,8 @@ img { max-width: 100%; height: auto; }
 /* Header */
 .atas { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; padding: 20px 0 0; }
 .merek { font-weight: 700; font-size: 1.05rem; color: var(--fg); text-decoration: none; padding: 6px 0; }
-.atas nav { display: flex; align-items: center; gap: 4px 18px; font: .85rem var(--ui); }
-.atas nav a { padding: 8px 0; }
+.atas nav { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 18px; font: .85rem var(--ui); }
+.atas nav a { padding: 8px 0; white-space: nowrap; }
 .atas nav a[aria-current="page"] { color: var(--fg); text-decoration: none; font-weight: 600; }
 .tema {
   min-height: 34px; padding: 0 10px; border: 1px solid var(--line); border-radius: 3px; background: transparent;
