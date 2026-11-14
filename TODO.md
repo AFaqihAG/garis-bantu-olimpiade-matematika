@@ -34,7 +34,7 @@ Untuk setiap jilid (Jilid 0 sampai 3 dan Cheatsheet Teorema):
 - [ ] **(Penulis)** Satu kalimat spesifik untuk beranda: cakupan topik, asal soal, jumlah contoh.
 - [x] **(Claude)** Jilid 0 dan 1: judul, ringkasan, daftar bab, sampul asli, dan contoh halaman diambil dari PDF rilis `sma-v0.1`.
 - [ ] **(Penulis)** Periksa ringkasan Jilid 0 dan 1 di `docs/sma/index.html`.
-- [ ] **(Claude)** Jilid 2, 3, dan Cheatsheet: isi begitu PDF-nya ada (sampul `docs/img/sampul-sma-<n>.jpg` dan `sampul-sma-<n>-besar.jpg`, contoh halaman `docs/img/contoh-sma-<n>-hlm-<h>.png`).
+- [ ] **(Claude)** Jilid 2, 3, dan Cheatsheet: isi begitu PDF-nya ada (sampul `docs/img/sampul-sma-<n>.jpg` dan `sampul-sma-<n>-besar.jpg`, halaman pratinjau isi `docs/img/pratinjau/sma-<n>/`).
 
 Cara menyerahkan: kirim semuanya dalam satu pesan atau satu file teks. Tidak perlu rapi.
 
@@ -64,7 +64,7 @@ Alur rilis setelah itu:
 - [x] **(Claude)** Favicon.
 - [x] **(Claude)** Gambar pratinjau dan meta Open Graph untuk tautan yang dibagikan di WhatsApp atau media sosial.
 
-- [x] **(Claude)** Sampul dan contoh halaman di halaman Buku SMA bisa diklik untuk dilihat besar di atas halaman.
+- [x] **(Claude)** Sampul di halaman Buku SMA bisa diklik untuk dilihat besar, dan tombol "Lihat isi" menampilkan pratinjau sebagian halaman buku tanpa mengunduh.
 
 ## 7. Sebelum label "uji coba" dicabut
 
