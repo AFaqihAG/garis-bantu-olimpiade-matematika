@@ -2,14 +2,14 @@
 
 > **Uji coba.** Semua PDF yang tersedia saat ini adalah dummy dan bukan isi buku.
 
-*Garis Bantu Olimpiade Matematika* adalah buku persiapan olimpiade matematika berbahasa Indonesia karya Ahmad Faqih Al Ghiffary. Buku ini membahas konsep, teknik, dan contoh soal olimpiade secara bertahap, dari fondasi sampai materi lanjut, dan dibagikan gratis dalam bentuk PDF.
+*Garis Bantu Olimpiade Matematika* adalah buku persiapan olimpiade matematika berbahasa Indonesia karya Ahmad Faqih Al Ghiffary. Buku ini ditujukan untuk siswa yang belajar mandiri, dan dapat dipakai guru sebagai bahan ajar. Konsep, teknik, dan contoh soal dibahas bertahap, dari fondasi sampai materi lanjut, dalam bentuk PDF.
 
 ## Jenjang
 
 | Jenjang | Status | Isi |
 |---|---|---|
-| [SMA](sma/README.md) | Tersedia (uji coba) | Jilid 0 (Fondasi), Jilid 1, Jilid 2, Jilid 3, Cheatsheet Teorema |
-| [SMP](smp/README.md) | Menyusul | |
+| [SMA](sma/README.md) | Tersedia (uji coba) | Jilid 0 (Fondasi), Jilid 1 (Dasar), Jilid 2, Jilid 3, Cheatsheet Teorema |
+| [SMP](smp/README.md) | Belum tersedia | |
 
 ## Unduh
 
@@ -19,7 +19,7 @@ PDF juga bisa diambil langsung dari [Releases](https://github.com/AFaqihAG/garis
 
 ## Melaporkan kesalahan
 
-Menemukan salah ketik, salah hitung, atau soal yang keliru? Isi **[formulir laporan](https://forms.gle/X9PihbFZai924J546)** (tanpa perlu akun). Sebutkan jenjang, jilid, versi PDF, nomor halaman, dan letak kesalahannya. Saran juga bisa dikirim lewat formulir yang sama.
+Menemukan salah ketik, salah hitung, atau soal yang keliru? Isi **[formulir laporan](https://forms.gle/X9PihbFZai924J546)** (tanpa perlu akun). Saran juga bisa dikirim lewat formulir yang sama.
 
 Bagi yang terbiasa dengan GitHub, laporan juga bisa dibuka sebagai [Issue](https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/issues/new/choose). Panduan singkat ada di [CONTRIBUTING.md](.github/CONTRIBUTING.md).
 

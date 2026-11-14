@@ -6,7 +6,7 @@ Repo ini hanya berisi halaman unduhan dan tempat laporan. Naskah buku tidak ada 
 
 Jalur utama untuk semua pembaca adalah [Google Form](https://forms.gle/X9PihbFZai924J546), tanpa perlu akun. Kalau kamu punya akun GitHub, boleh juga lewat Issue:
 
-- **Kesalahan di buku**: [formulir laporan kesalahan](https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/issues/new?template=laporan-kesalahan.yml). Sertakan versi PDF dan nomor halaman.
+- **Kesalahan di buku**: [formulir laporan kesalahan](https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/issues/new?template=laporan-kesalahan.yml).
 - **Saran umum**: [formulir saran](https://github.com/AFaqihAG/garis-bantu-olimpiade-matematika/issues/new?template=saran.yml).
 
 Sebelum melapor, cek dulu apakah kesalahan yang sama sudah dilaporkan.
@@ -22,7 +22,7 @@ Label dipakai pengelola untuk memilah laporan.
 | `sma` | Jenjang SMA |
 | `smp` | Jenjang SMP |
 | `jilid-0` | Jilid 0 (Fondasi) |
-| `jilid-1` | Jilid 1 |
+| `jilid-1` | Jilid 1 (Dasar) |
 | `jilid-2` | Jilid 2 |
 | `jilid-3` | Jilid 3 |
 
